@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        style="@style/header_1"
+        android:text="@string/cloud_action" />
+
+    <TextView
+        style="@style/main_body_text"
+        android:text="@string/cloud_action_body_text" />
+
+    <Button
+        android:id="@+id/call_cloud_btn"
+        style="@style/action_button"
+        android:text="@string/cloud_action_btn" />
+
+    <LinearLayout
+        android:id="@+id/cloud_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cloud_action_response_title"
+            style="@style/main_body_text"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cloud_success_bg"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/main_body_text"
+            android:layout_marginTop="20dp"
+            android:text="@string/cloud_action_response_subtitle" />
+    </LinearLayout>
+
+</LinearLayout>

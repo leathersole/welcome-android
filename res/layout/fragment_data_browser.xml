@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        style="@style/header_1"
+        android:text="@string/data_browser" />
+
+    <TextView
+        style="@style/main_body_text"
+        android:text="@string/data_browser_body_text" />
+
+    <EditText
+        android:id="@+id/user_name"
+        style="@style/main_body_text"
+        android:layout_marginTop="20dp"
+        android:ems="10" ><requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/data_browser_btn"
+        style="@style/action_button"
+        android:text="@string/data_browser_btn" />
+
+    <TextView
+        android:id="@+id/data_browser_success"
+        style="@style/main_body_text"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cloud_success_bg"
+        android:padding="10dp"
+        android:text="@string/data_browser_success" />
+
+    <TextView
+        android:id="@+id/data_browser_fail"
+        style="@style/main_body_text"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cloud_fail_bg"
+        android:padding="10dp"
+        android:text="@string/data_browser_fail" />
+
+</LinearLayout>

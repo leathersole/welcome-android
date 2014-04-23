@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/header_1"
+            android:text="@string/location_title" />
+
+        <TextView
+            style="@style/main_body_text"
+            android:text="@string/location_body_text" />
+
+        <Button
+            android:id="@+id/location_btn"
+            style="@style/action_button"
+            android:text="@string/location_btn" />
+
+        <EditText
+            android:id="@+id/coords"
+            style="@style/main_body_text"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:ems="10" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/location_success"
+            style="@style/main_body_text"
+            android:text="@string/location_success" />
+
+        <Button
+            android:id="@+id/weather_btn"
+            style="@style/action_button"
+            android:text="@string/weather_btn" />
+
+        <LinearLayout
+            android:id="@+id/weather_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/weather_date"
+                style="@style/main_body_text" />
+
+            <TextView
+                android:id="@+id/weather_temp"
+                style="@style/main_body_text" />
+
+            <TextView
+                android:id="@+id/weather_desc"
+                style="@style/main_body_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
