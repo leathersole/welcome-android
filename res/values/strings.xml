@@ -48,7 +48,7 @@
     <string name="cloud_action_response_title">Response: Hello from feedhenry</string>
     <string name="cloud_action_response_subtitle">Now check your stats page in the studio to check that this cloud call happened.</string>
     
-    <string name="data_browser_body_text">Enter your name and tap the button to save your name in our cloud database.</string>
+    <string name="data_browser_body_text">First go to the Data Browser menu in your cloud code in the Studio and enable it. Then enter your name here and tap the button to save your name in our cloud database.</string>
     <string name="data_browser_btn">&#xf0c7; Save</string>
     <string name="data_browser_success">Success: Name stored in Mongo DB</string>
     <string name="data_browser_fail">Fail: Name not stored</string>
