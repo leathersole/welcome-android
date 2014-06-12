@@ -11,7 +11,7 @@ import com.feedhenry.android.MyApplication;
 import com.feedhenry.sdk.FH;
 import com.feedhenry.sdk.FHActCallback;
 import com.feedhenry.sdk.FHResponse;
-import com.feedhenry.sdk.api.FHActRequest;
+import com.feedhenry.sdk.api.FHCloudRequest;
 
 public class FHAgent {
 	
@@ -53,7 +53,7 @@ public class FHAgent {
             return;
         } else {
             try {
-                FHActRequest request = FH.buildActRequest(act, params);
+                FHCloudRequest request = FH.buildActRequest(act, params);
                 request.executeAsync(callback);
             } catch (Exception e) {
                 e.printStackTrace();
