@@ -46,19 +46,13 @@ public class FHAgent {
     }
     
     
-    private void call(final String act, final JSONObject params, final FHActCallback callback) {
-        if (initialised == false) {
-            Log.i("FEEDHENRY", "App request without initialising");
-            callback.fail(getFakedErrorResponse("App not initialised."));
-            return;
-        } else {
-            try {
-                FHCloudRequest request = FH.buildActRequest(act, params);
-                request.executeAsync(callback);
-            } catch (Exception e) {
-                e.printStackTrace();
-                callback.fail(getFakedErrorResponse(e.getMessage()));
-            }
+     private void call(final String path, final JSONObject params, final FHActCallback callback) {
+        try {
+            FHCloudRequest request = FH.buildCloudRequest(path, "POST", null, params);
+            request.executeAsync(callback);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.i("fh", "Init Failed!");
         }
     }
     
