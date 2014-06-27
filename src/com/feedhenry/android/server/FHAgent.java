@@ -16,7 +16,6 @@ import com.feedhenry.sdk.api.FHCloudRequest;
 public class FHAgent {
 	
     public static boolean initialised = false;
-
     
     public void cloudCall(FHActCallback fhActCallback){
         JSONObject param = new JSONObject("{}");
@@ -37,7 +36,7 @@ public class FHAgent {
     
     public void getFHVars(FHActCallback fhActCallback){
         JSONObject param = new JSONObject("{}");
-        this.call("fhvars", param, fhActCallback);
+        this.call("getFhVars", param, fhActCallback);
     }
         
     public static boolean isOnline(){
