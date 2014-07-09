@@ -1,5 +1,4 @@
 package com.feedhenry.android.server;
-package com.feedhenry.android.server;
 
 import org.json.fh.JSONArray;
 import org.json.fh.JSONObject;
