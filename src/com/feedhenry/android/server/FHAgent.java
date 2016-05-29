@@ -39,13 +39,13 @@ public class FHAgent {
     
 
     public void dataBrowser(String userName, FHActCallback fhActCallback) {
-    	JSONObject param = new JSONObject("{'collection':'Users', 'document': {username: " + userName + "}}");
+    	JSONObject param = new JSONObject("{'collection':'Users', 'document': {username: " + JSONObject.quote(userName) + "}}");
     	this.call("saveData", param, fhActCallback);
 	}
     
     
     public void getWeather(double lat, double lng, FHActCallback fhActCallback){
-        JSONObject param = new JSONObject("{'lat':'" + lat + "', 'lon':'" + lng + "'}");
+        JSONObject param = new JSONObject("{'lat':'" + JSONObject.quote(lat) + "', 'lon':'" + JSONObject.quote(lng) + "'}");
         this.call("getWeather", param, fhActCallback);
     }
     
