@@ -45,7 +45,7 @@ public class FHAgent {
     
     
     public void getWeather(double lat, double lng, FHActCallback fhActCallback){
-        JSONObject param = new JSONObject("{'lat':'" + JSONObject.quote(lat) + "', 'lon':'" + JSONObject.quote(lng) + "'}");
+        JSONObject param = new JSONObject("{'lat':'" + JSONObject.quote(String.valueOf(lat)) + "', 'lon':'" + JSONObject.quote(String.valueOf(lng)) + "'}");
         this.call("getWeather", param, fhActCallback);
     }
     
